@@ -1,0 +1,11 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    cout << "Reading from numbers.txt...\n";
+    ifstream fin("numbers.txt");
+    int x, max=-1111111111;
+    while (fin >> x) if (x > max) max = x;
+    cout << "Largest number: " << max;
+}
