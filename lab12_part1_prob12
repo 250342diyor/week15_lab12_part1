@@ -1,0 +1,15 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    ifstream numbers("data.txt");
+    int x,count=0;
+    while (numbers >> x) {
+        if (x < 0) {
+            count++;
+        }
+    }
+    numbers.close();
+    cout << count << endl;
+}
