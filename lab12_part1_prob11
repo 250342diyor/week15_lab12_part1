@@ -1,0 +1,8 @@
+#include <fstream>
+using namespace std;
+
+int main() {
+    ofstream idk("report.txt");
+    idk << "File handling in C++ is easy!";
+    idk.close();
+}
