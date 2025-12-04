@@ -1,0 +1,15 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+int main() {
+    ifstream myfile1("a.txt");
+    ifstream myfile2("b.txt");
+    int x, count = 0;
+    while (myfile1>>x) {
+        count++;
+    }
+    while (myfile2>>x) {
+        count++;
+    }
+    cout << count << endl;
+}
