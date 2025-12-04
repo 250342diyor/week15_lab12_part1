@@ -1,0 +1,11 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+int main() {
+    cout<<"Enter a number to append: ";
+    int n;
+    cin>>n;
+    ofstream app("log.txt",ios::app);
+    app<<n<<" ";
+    cout<<"number has been appended"<<endl;
+}
