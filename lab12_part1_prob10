@@ -1,0 +1,16 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    cout << "Enter filename: ";
+    string fname;
+    cin >> fname;
+    ifstream fin(fname);
+    char c;
+    int cnt = 0;
+    while (fin.get(c)) {
+        cnt++;
+    }
+    cout << "Character count: " << cnt;
+}
