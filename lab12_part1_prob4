@@ -1,0 +1,13 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+int main() {
+    cout<<"Enter a number to end: "<<endl;
+    int n;
+    cin>>n;
+    ofstream myfile("count.txt");
+    for(int i=1;i<=n;i++) {
+        myfile<<i<<" ";
+    }
+    myfile.close();
+}
